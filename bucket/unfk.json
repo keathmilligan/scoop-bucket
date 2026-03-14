@@ -1,0 +1,34 @@
+{
+  "version": "1.3.0",
+  "description": "",
+  "homepage": "",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/keathmilligan/unfk/releases/download/v1.3.0/unfk-1.3.0-x86_64-pc-windows-msvc.zip",
+      "hash": "22aab1e8f862eb80b6b16840554eddf3fb410d2587747e68feebb7deb6579e92"
+    },
+    "arm64": {
+      "url": "https://github.com/keathmilligan/unfk/releases/download/v1.3.0/unfk-1.3.0-aarch64-pc-windows-msvc.zip",
+      "hash": "abbdf2b035aa3e0ed954fdc920e75e81f629e9915e4dc31ed4eaa63ea23abf00"
+    }
+  },
+  "bin": "unfk.exe",
+  "checkver": {
+    "github": "https://github.com/keathmilligan/unfk"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/keathmilligan/unfk/releases/download/v$version/unfk-$version-x86_64-pc-windows-msvc.zip"
+      },
+      "arm64": {
+        "url": "https://github.com/keathmilligan/unfk/releases/download/v$version/unfk-$version-aarch64-pc-windows-msvc.zip"
+      }
+    },
+    "hash": {
+      "url": "https://github.com/keathmilligan/unfk/releases/download/v$version/SHA256SUMS",
+      "regex": "([a-fA-F0-9]{64})\\s+unfk-$version-$basename"
+    }
+  }
+}
