@@ -1,0 +1,34 @@
+{
+  "version": "0.1.4",
+  "description": "",
+  "homepage": "",
+  "license": "MIT",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/keathmilligan/stunt/releases/download/v0.1.4/stunt-0.1.4-x86_64-pc-windows-msvc.zip",
+      "hash": "cf8b64ad86f1276b6aba2f7d34a00413218f567641f94f3a1848c307a9094f89"
+    },
+    "arm64": {
+      "url": "https://github.com/keathmilligan/stunt/releases/download/v0.1.4/stunt-0.1.4-aarch64-pc-windows-msvc.zip",
+      "hash": "63d0bc03f830b2b9551ab3183ba2adc148398a085a7dd1bb935fce877f0c8cba"
+    }
+  },
+  "bin": "stunt.exe",
+  "checkver": {
+    "github": "https://github.com/keathmilligan/stunt"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/keathmilligan/stunt/releases/download/v$version/stunt-$version-x86_64-pc-windows-msvc.zip"
+      },
+      "arm64": {
+        "url": "https://github.com/keathmilligan/stunt/releases/download/v$version/stunt-$version-aarch64-pc-windows-msvc.zip"
+      }
+    },
+    "hash": {
+      "url": "https://github.com/keathmilligan/stunt/releases/download/v$version/SHA256SUMS",
+      "regex": "([a-fA-F0-9]{64})\\s+stunt-$version-$basename"
+    }
+  }
+}
