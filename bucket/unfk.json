@@ -1,16 +1,16 @@
 {
-  "version": "1.3.2",
+  "version": "1.3.0",
   "description": "",
   "homepage": "",
   "license": "MIT",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/keathmilligan/unfk/releases/download/v1.3.2/unfk-1.3.2-x86_64-pc-windows-msvc.zip",
-      "hash": "03d98488f69eb4e3da21902bef53f6a318b03f5a2b9c634050475e4625bd1d9f"
+      "url": "https://github.com/keathmilligan/unfk/releases/download/v1.3.0/unfk-1.3.0-x86_64-pc-windows-msvc.zip",
+      "hash": "76df67b419b9262b3ea1b12e2a6564de44a40fe764b51419c41f601cbee52414"
     },
     "arm64": {
-      "url": "https://github.com/keathmilligan/unfk/releases/download/v1.3.2/unfk-1.3.2-aarch64-pc-windows-msvc.zip",
-      "hash": "1853ce58b154f48ae0717a4bc99ff7c9a4a89025d604a1fb38ad5e57ee52ddd9"
+      "url": "https://github.com/keathmilligan/unfk/releases/download/v1.3.0/unfk-1.3.0-aarch64-pc-windows-msvc.zip",
+      "hash": "c78b6a6c9ede9cff74281453f54368f8085b265fd2a72015cef774d308e3b08b"
     }
   },
   "bin": "unfk.exe",
